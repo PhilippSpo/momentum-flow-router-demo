@@ -1,0 +1,3 @@
+[submodule "packages/flow-router-transitions"]
+	path = packages/flow-router-transitions
+	url = https://github.com/PhilippSpo/flow-router-transitions.git

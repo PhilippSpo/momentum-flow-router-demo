@@ -1,0 +1,50 @@
+@import '../*'
+
+.btn, .btn:hover
+	background-color color-primary
+	color white
+
+.btn-floating
+	background-color color-secondary
+
+.btn-icon
+	background none
+	display inline-block
+	color #FFF
+	position relative
+	overflow hidden
+	z-index 1
+	width 37px
+	height 37px
+	line-height 37px
+	padding 0
+	border-radius 50%
+	transition .3s
+	cursor pointer
+	vertical-align middle
+	&:hover
+		background-color rgba(0,0,0,0.2)
+
+	> i
+		width inherit
+		display inline-block
+		text-align center
+		color #FFF
+		font-size 1.6rem
+		line-height 37px
+
+	&:before
+		border-radius 0
+
+	&.btn-large
+		width 55.5px
+		height 55.5px
+
+	&.btn-large i
+		line-height 55.5px
+
+button.btn-icon
+	border none
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i
+	line-height 37px

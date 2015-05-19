@@ -1,0 +1,136 @@
+
+@import 'nib'
+
+normalize-base()
+normalize-html5()
+
+.center-wrapper
+	center()
+
+.hv-center
+	height 100%
+	display flex
+	align-items center
+	justify-content space-around
+
+nav
+	.fixed-content-wrapper
+		height 65px
+		bottom auto
+
+.main-content-wrapper
+	> div
+		height 100%
+	.fixed-content-wrapper
+		top 65px
+
+.noPadding
+	padding-top 0 !important
+
+.main-content-wrapper
+	@css {
+		height: calc(100vh - 65px);
+	}
+	position relative
+	center()
+
+.questioning-wrapper
+	padding 10px
+	padding-top 20px
+	position absolute
+	bottom 55px
+	left 0
+	right 0
+	top 0
+	overflow auto
+
+.button-footer
+	border-top 1px solid border-color
+	position absolute
+	z-index 1
+	background white
+	padding 10px 0
+	bottom 0
+	left 0
+	right 0
+
+.nav-footer-wrapper
+	padding 0 10px
+
+*
+	-webkit-font-smoothing: antialiased
+	box-sizing border-box
+
+media="screen, projection"
+
+body
+	color #4D4D4E
+	font-family Roboto
+	font-size 16px
+	font-weight 500
+
+.navbar-fixed
+	z-index 997
+
+ul.side-nav.fixed li.menu-item
+	line-height: 44px
+
+ul.side-nav li.logo
+	padding: 0
+	a
+		color: white
+
+ul.collection
+	border: 0
+
+li.collection-item.header-item
+	border: 0
+
+ul.collection a.collection-item
+	color: rgba(0, 0, 0, 0.87)
+	&:hover
+		background: #fff !important
+
+.text-green
+	color green
+
+.text-red
+	color red
+
+
+.info
+	.row.center-wrapper
+		center(410px)
+	img
+		max-width 200px
+
+.nav-footer-wrapper
+	padding 0 10px
+
+.dropdown-content.select-dropdown
+	z-index 2
+
+.loading-content
+	margin-top 15px
+	margin-left 15px
+
+main.landing
+	height 100vh
+	background-image url('/images/127H.jpg')
+	background-size cover
+	background-position center
+	color white
+	padding 20px
+	// margin-bottom 50px
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	text-align center
+
+	.landing-content
+		border-radius 5px
+		background rgba(0,0,0,0.5)
+		opacity 0.9
+		padding 20px
+		width 100%
