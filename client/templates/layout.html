@@ -4,7 +4,9 @@
 		<div class="navbar-fixed">
 			<nav>
 				<div class="nav-wrapper">
-					{{> Template.dynamic template=top}}
+					{{#momentum plugin='flow-router'}}
+						{{> Template.dynamic template=top}}
+					{{/momentum}}
 				</div>
 			</nav>
 		</div>
@@ -12,17 +14,15 @@
 
 	<main>
 			<div class="main-content-wrapper">
+				{{#momentum plugin='flow-router'}}
 					{{> Template.dynamic template=main}}
+				{{/momentum}}
 			</div>
 	</main>
 	{{/layoutWrapper}}
 </template>
 
 <template name="layoutLeft">
-	{{>layout}}
-</template>
-
-<template name="layoutRight">
 	{{>layout}}
 </template>
 
