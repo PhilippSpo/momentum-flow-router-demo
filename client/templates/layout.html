@@ -1,11 +1,10 @@
 <template name="layout">
+	{{#layoutWrapper}}
 	<header>
 		<div class="navbar-fixed">
 			<nav>
 				<div class="nav-wrapper">
-					{{#momentum plugin='flow-router'}}
-						{{> Template.dynamic template=top}}
-					{{/momentum}}
+					{{> Template.dynamic template=top}}
 				</div>
 			</nav>
 		</div>
@@ -13,9 +12,20 @@
 
 	<main>
 			<div class="main-content-wrapper">
-					{{#momentum plugin='flow-router'}}
-						{{> Template.dynamic template=main}}
-					{{/momentum}}
+					{{> Template.dynamic template=main}}
 			</div>
 	</main>
+	{{/layoutWrapper}}
+</template>
+
+<template name="layoutLeft">
+	{{>layout}}
+</template>
+
+<template name="layoutRight">
+	{{>layout}}
+</template>
+
+<template name="layoutFade">
+	{{>layout}}
 </template>

@@ -1,3 +1,9 @@
 [submodule "packages/momentum-flow-router"]
 	path = packages/momentum-flow-router
 	url = https://github.com/PhilippSpo/momentum-flow-router.git
+[submodule "packages/meteor-momentum"]
+	path = packages/meteor-momentum
+	url = https://github.com/percolatestudio/meteor-momentum.git
+[submodule "packages/flow-layout"]
+	path = packages/flow-layout
+	url = https://github.com/meteorhacks/flow-layout.git
