@@ -12,7 +12,7 @@ insecure
 materialize:materialize
 mquandalle:stylus
 
-meteorhacks:flow-router
-meteorhacks:flow-layout
+kadira:flow-router
+kadira:blaze-layout
 
 philippspo:momentum-flow-router
